@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exclusive - E-commerce Demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="top-bar bg-black text-white text-center py-2">
+        <div class="container d-flex justify-content-center justify-content-md-between align-items-center">
+            <p class="mb-0 d-none d-md-block">
+                Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+                <a href="#" class="fw-bold text-white">ShopNow</a>
+            </p>
+            <div class="dropdown">
+                <a href="#" class="text-white text-decoration-none dropdown-toggle" id="languageDropdown"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    English
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                    <li><a class="dropdown-item" href="#">Hindi</a></li>
+                    <li><a class="dropdown-item" href="#">Spanish</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header class="main-header border-bottom py-3">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="#" class="logo text-black text-decoration-none">Exclusive</a>
+
+                <ul class="nav-links d-none d-lg-flex list-unstyled mb-0 gap-4">
+                    <li><a href="#" class="nav-link-item active">Home</a></li>
+                    <li><a href="#" class="nav-link-item">Contact</a></li>
+                    <li><a href="#" class="nav-link-item">About</a></li>
+                    <li><a href="#" class="nav-link-item">Sign Up</a></li>
+                </ul>
+
+                <div class="header-actions d-flex align-items-center gap-3">
+                    <div class="search-box d-none d-md-block">
+                        <input type="text" placeholder="What are you looking for?">
+                        <i class="fas fa-search search-icon"></i>
+                    </div>
+                    <a href="#" class="text-black"><i class="far fa-heart fs-5"></i></a>
+                    <a href="#" class="text-black"><i class="fas fa-shopping-cart fs-5"></i></a>
+                    <button class="btn d-lg-none p-0" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+                        <i class="fas fa-bars fs-4"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title logo">Exclusive</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="list-unstyled">
+                <li class="mb-3"><a href="#" class="text-dark fs-5 text-decoration-none">Home</a></li>
+                <li class="mb-3"><a href="#" class="text-dark fs-5 text-decoration-none">Contact</a></li>
+                <li class="mb-3"><a href="#" class="text-dark fs-5 text-decoration-none">About</a></li>
+                <li class="mb-3"><a href="#" class="text-dark fs-5 text-decoration-none">Sign Up</a></li>
+            </ul>
+            <div class="search-box mt-4 d-md-none">
+                <input type="text" placeholder="What are you looking for?">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+        </div>
+    </div>
+    <main class="container py-4">
+        <div class="row">
+            <aside class="col-lg-3 d-none d-lg-block category-sidebar">
+                <ul class="list-unstyled">
+                    <li class="d-flex justify-content-between align-items-center"><a href="#">Woman's Fashion</a><i
+                            class="fas fa-chevron-right"></i></li>
+                    <li class="d-flex justify-content-between align-items-center"><a href="#">Men's Fashion</a><i
+                            class="fas fa-chevron-right"></i></li>
+                    <li><a href="#">Electronics</a></li>
+                    <li><a href="#">Home & Lifestyle</a></li>
+                    <li><a href="#">Medicine</a></li>
+                    <li><a href="#">Sports & Outdoor</a></li>
+                    <li><a href="#">Baby's & Toys</a></li>
+                    <li><a href="#">Groceries & Pets</a></li>
+                    <li><a href="#">Health & Beauty</a></li>
+                </ul>
+            </aside>
+            <div class="col-lg-9 mt-3 mt-lg-0">
+                <div class="main-slider">
+                    <div class="slider-item">
+                        <div class="row h-100 align-items-center">
+                            <div class="col-md-6">
+                                <div class="slide-content">
+                                    <p class="d-flex align-items-center gap-3"><i class="fab fa-apple fa-2x"></i> iPhone
+                                        14 Series</p>
+                                    <h1 class="display-4 fw-semibold my-3">Up to 10% <br>off Voucher</h1>
+                                    <a href="#" class="shop-now-link text-white">Shop Now <i
+                                            class="fas fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 d-flex justify-content-center align-items-center">
+                                <img src="images/dc40ba897215f42e5883a64157f0aa3a4d1a866a.jpg" class="slider-img"
+                                    alt="iPhone 14">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item slider-item-light">
+                        <div class="row h-100 align-items-center">
+                            <div class="col-md-6">
+                                <div class="slide-content headphones">
+                                    <p class="d-flex align-items-center gap-3"><i
+                                            class="fas fa-headphones-alt fa-2x"></i> Premium Headsets</p>
+                                    <h1 class="display-4 fw-semibold my-3 text-black">Best Sound <br>Experience</h1>
+                                    <a href="#" class="shop-now-link text-dark">Shop Now <i
+                                            class="fas fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 d-flex justify-content-center align-items-center">
+                                <img src="images/airpods-max-select-202409-midnight_FV1.png" class="slider-img"
+                                    alt="Headphones">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="flash-sales-section container">
+        <div class="d-flex align-items-center mb-3">
+            <span class="section-title-indicator"></span>
+            <h6 class="section-title-text text-danger fw-semibold mb-0">Today's</h6>
+        </div>
+        <div class="d-flex flex-wrap align-items-end justify-content-between mb-4">
+            <div class="d-flex flex-wrap align-items-end gap-5">
+                <h2 class="section-main-title fw-semibold mb-0">Flash Sales</h2>
+                <div class="countdown-timer d-flex align-items-end gap-3">
+                    <div>
+                        <span class="label">Days</span>
+                        <span class="time" id="days">03</span>
+                    </div>
+                    <span class="separator">:</span>
+                    <div>
+                        <span class="label">Hours</span>
+                        <span class="time" id="hours">23</span>
+                    </div>
+                    <span class="separator">:</span>
+                    <div>
+                        <span class="label">Minutes</span>
+                        <span class="time" id="minutes">19</span>
+                    </div>
+                    <span class="separator">:</span>
+                    <div>
+                        <span class="label">Seconds</span>
+                        <span class="time" id="seconds">56</span>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-nav">
+                <button class="btn slick-prev-arrow"><i class="fas fa-arrow-left"></i></button>
+                <button class="btn slick-next-arrow"><i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+        <div class="product-slider">
+            <div class="p-2">
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <span class="discount-badge">-40%</span>
+                        <div class="product-actions">
+                            <a href="#"><i class="far fa-heart"></i></a>
+                            <a href="#"><i class="far fa-eye"></i></a>
+                        </div>
+                        <img src="images/5d5c2e5250752d55f8b60f2aa2923183dadbc135.png" alt="HAVIT HV-G92 Gamepad">
+                        <div class="add-to-cart-btn">
+                            <button class="btn btn-dark w-100">Add To Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info mt-3">
+                        <h6 class="product-name">HAVIT HV-G92 Gamepad</h6>
+                        <div class="price">
+                            <span class="new-price text-danger">$120</span>
+                            <span class="old-price text-muted text-decoration-line-through">$160</span>
+                        </div>
+                        <div class="rating d-flex align-items-center gap-1">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <span class="review-count text-muted">(88)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2">
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <span class="discount-badge">-35%</span>
+                        <div class="product-actions">
+                            <a href="#"><i class="far fa-heart"></i></a>
+                            <a href="#"><i class="far fa-eye"></i></a>
+                        </div>
+                        <img src="images/e59d9f348cc24eeff489863523b63971c3ff8e4a.png" alt="AK-900 Wired Keyboard">
+                        <div class="add-to-cart-btn">
+                            <button class="btn btn-dark w-100">Add To Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info mt-3">
+                        <h6 class="product-name">AK-900 Wired Keyboard</h6>
+                        <div class="price">
+                            <span class="new-price text-danger">$960</span>
+                            <span class="old-price text-muted text-decoration-line-through">$1160</span>
+                        </div>
+                        <div class="rating d-flex align-items-center gap-1">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="far fa-star text-muted"></i>
+                            <span class="review-count text-muted">(75)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2">
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <span class="discount-badge">-30%</span>
+                        <div class="product-actions">
+                            <a href="#"><i class="far fa-heart"></i></a>
+                            <a href="#"><i class="far fa-eye"></i></a>
+                        </div>
+                        <img src="images/5e634682db5174aff99bb9337d2dc9598a0b44e4.png" alt="IPS LCD Gaming Monitor">
+                        <div class="add-to-cart-btn">
+                            <button class="btn btn-dark w-100">Add To Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info mt-3">
+                        <h6 class="product-name">IPS LCD Gaming Monitor</h6>
+                        <div class="price">
+                            <span class="new-price text-danger">$370</span>
+                            <span class="old-price text-muted text-decoration-line-through">$400</span>
+                        </div>
+                        <div class="rating d-flex align-items-center gap-1">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <span class="review-count text-muted">(99)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2">
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <span class="discount-badge">-25%</span>
+                        <div class="product-actions">
+                            <a href="#"><i class="far fa-heart"></i></a>
+                            <a href="#"><i class="far fa-eye"></i></a>
+                        </div>
+                        <img src="images/288da330273c46e1c3dc0a8915c4b031d0345347.png" alt="S-Series Comfort Chair">
+                        <div class="add-to-cart-btn">
+                            <button class="btn btn-dark w-100">Add To Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info mt-3">
+                        <h6 class="product-name">S-Series Comfort Chair</h6>
+                        <div class="price">
+                            <span class="new-price text-danger">$375</span>
+                            <span class="old-price text-muted text-decoration-line-through">$400</span>
+                        </div>
+                        <div class="rating d-flex align-items-center gap-1">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star-half-alt text-warning"></i>
+                            <span class="review-count text-muted">(99)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2">
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <span class="discount-badge">-25%</span>
+                        <div class="product-actions">
+                            <a href="#"><i class="far fa-heart"></i></a>
+                            <a href="#"><i class="far fa-eye"></i></a>
+                        </div>
+                        <img src="images/288da330273c46e1c3dc0a8915c4b031d0345347 (1).png" alt="Another Chair">
+                        <div class="add-to-cart-btn">
+                            <button class="btn btn-dark w-100">Add To Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info mt-3">
+                        <h6 class="product-name">Another Comfort Chair</h6>
+                        <div class="price">
+                            <span class="new-price text-danger">$400</span>
+                            <span class="old-price text-muted text-decoration-line-through">$500</span>
+                        </div>
+                        <div class="rating d-flex align-items-center gap-1">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="far fa-star text-muted"></i>
+                            <span class="review-count text-muted">(45)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-5">
+            <a href="#" class="btn btn-danger btn-view-all">View All Products</a>
+        </div>
+
+        <div class="dividerLine"></div>
+    </section>
+    <section class="category-section container">
+        <div class="d-flex align-items-center mb-3">
+            <span class="section-title-indicator"></span>
+            <h6 class="section-title-text text-danger fw-semibold mb-0">Categories</h6>
+        </div>
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 class="section-main-title fw-semibold">Browse By Category</h2>
+            <div class="category-slider-nav">
+                <button class="btn category-prev-arrow"><i class="fas fa-arrow-left"></i></button>
+                <button class="btn category-next-arrow"><i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+        <div class="category-slider">
+            <div class="p-2">
+                <a href="#" class="category-box">
+                    <i class="fas fa-mobile-alt fa-3x"></i>
+                    <span>Phones</span>
+                </a>
+            </div>
+            <div class="p-2">
+                <a href="#" class="category-box">
+                    <i class="fas fa-desktop fa-3x"></i>
+                    <span>Computers</span>
+                </a>
+            </div>
+            <div class="p-2">
+                <a href="#" class="category-box">
+                    <i class="fas fa-stopwatch fa-3x"></i>
+                    <span>SmartWatch</span>
+                </a>
+            </div>
+            <div class="p-2">
+                <a href="#" class="category-box active">
+                    <i class="fas fa-camera fa-3x"></i>
+                    <span>Camera</span>
+                </a>
+            </div>
+            <div class="p-2">
+                <a href="#" class="category-box">
+                    <i class="fas fa-headphones fa-3x"></i>
+                    <span>HeadPhones</span>
+                </a>
+            </div>
+            <div class="p-2">
+                <a href="#" class="category-box">
+                    <i class="fas fa-gamepad fa-3x"></i>
+                    <span>Gaming</span>
+                </a>
+            </div>
+            <div class="p-2">
+                <a href="#" class="category-box">
+                    <i class="fas fa-laptop fa-3x"></i>
+                    <span>Laptops</span>
+                </a>
+            </div>
+            <div class="p-2">
+                <a href="#" class="category-box">
+                    <i class="fas fa-helicopter fa-3x"></i>
+                    <span>Drones</span>
+                </a>
+            </div>
+        </div>
+        <div class="dividerLine"></div>
+    </section>
+    <section class="bestselling-section container">
+        <div class="d-flex align-items-center mb-3">
+            <span class="section-title-indicator"></span>
+            <h6 class="section-title-text text-danger fw-semibold mb-0">This Month</h6>
+        </div>
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 class="section-main-title fw-semibold">Best Selling Products</h2>
+            <a href="#" class="btn btn-danger btn-view-all">View All</a>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <div class="product-actions">
+                            <a href="#"><i class="far fa-heart"></i></a>
+                            <a href="#"><i class="far fa-eye"></i></a>
+                        </div>
+                        <img src="images/ee9a38001e9f94261b28e16ea21bacb4144473e8.png" alt="The north coat">
+                    </div>
+                    <div class="product-info mt-3">
+                        <h6 class="product-name">The north coat</h6>
+                        <div class="price">
+                            <span class="new-price text-danger">$260</span>
+                            <span class="old-price text-muted text-decoration-line-through">$360</span>
+                        </div>
+                        <div class="rating d-flex align-items-center gap-1">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <span class="review-count text-muted">(65)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <div class="product-actions">
+                            <a href="#"><i class="far fa-heart"></i></a>
+                            <a href="#"><i class="far fa-eye"></i></a>
+                        </div>
+                        <img src="images/4f3ca1d12722dbdf98f25179d3c0b785988c513d.png" alt="Gucci duffle bag">
+                    </div>
+                    <div class="product-info mt-3">
+                        <h6 class="product-name">Gucci duffle bag</h6>
+                        <div class="price">
+                            <span class="new-price text-danger">$960</span>
+                            <span class="old-price text-muted text-decoration-line-through">$1160</span>
+                        </div>
+                        <div class="rating d-flex align-items-center gap-1">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star-half-alt text-warning"></i>
+                            <span class="review-count text-muted">(65)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <div class="product-actions">
+                            <a href="#"><i class="far fa-heart"></i></a>
+                            <a href="#"><i class="far fa-eye"></i></a>
+                        </div>
+                        <img src="images/6739d39dc218c97b645d616c8188a4f2e6aaf84b.png" alt="RGB liquid CPU Cooler">
+                    </div>
+                    <div class="product-info mt-3">
+                        <h6 class="product-name">RGB liquid CPU Cooler</h6>
+                        <div class="price">
+                            <span class="new-price text-danger">$160</span>
+                            <span class="old-price text-muted text-decoration-line-through">$170</span>
+                        </div>
+                        <div class="rating d-flex align-items-center gap-1">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="far fa-star text-muted"></i>
+                            <span class="review-count text-muted">(65)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <div class="product-actions">
+                            <a href="#"><i class="far fa-heart"></i></a>
+                            <a href="#"><i class="far fa-eye"></i></a>
+                        </div>
+                        <img src="images/e86f6e872757d20a14861e2e0ebd4e9889693f59.png" alt="Small BookSelf">
+                    </div>
+                    <div class="product-info mt-3">
+                        <h6 class="product-name">Small BookSelf</h6>
+                        <div class="price">
+                            <span class="new-price text-danger">$360</span>
+                        </div>
+                        <div class="rating d-flex align-items-center gap-1">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <span class="review-count text-muted">(65)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="promo-section container">
+        <div class="promo-banner bg-black text-white p-5">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <h6 class="promo-category-text fw-semibold mb-3">Categories</h6>
+                    <h1 class="promo-title display-5 fw-semibold mb-4">Enhance Your Music Experience</h1>
+                    <div class="promo-countdown d-flex justify-content-center justify-content-md-start gap-3 mb-4">
+                        <div class="promo-timer-circle">
+                            <span class="time" id="promo-days">05</span>
+                            <span class="label">Days</span>
+                        </div>
+                        <div class="promo-timer-circle">
+                            <span class="time" id="promo-hours">23</span>
+                            <span class="label">Hours</span>
+                        </div>
+                        <div class="promo-timer-circle">
+                            <span class="time" id="promo-minutes">59</span>
+                            <span class="label">Minutes</span>
+                        </div>
+                        <div class="promo-timer-circle">
+                            <span class="time" id="promo-seconds">35</span>
+                            <span class="label">Seconds</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-promo-buy">Buy Now!</a>
+                </div>
+                <div class="col-md-6 mt-4 mt-md-0">
+                    <img src="images/3cc943ca7e210f637fc0504b7d93cd207df744c2.png" class="img-fluid jblSpeaker"
+                        alt="JBL Speaker">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="explore-products-section container">
+        <div class="d-flex align-items-center mb-3">
+            <span class="section-title-indicator"></span>
+            <h6 class="section-title-text text-danger fw-semibold mb-0">Our Products</h6>
+        </div>
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 class="section-main-title fw-semibold">Explore Our Products</h2>
+            <div class="explore-slider-nav">
+                <button class="btn explore-prev-arrow"><i class="fas fa-arrow-left"></i></button>
+                <button class="btn explore-next-arrow"><i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+        <div class="top-product-slider mb-4">
+            <div class="p-2">
+                <div class="product-card">
+                    <div class="product-image-container"><img src="images/78e727118c99fe72271cf43f5e3566b39ca7c8f4.jpg"
+                            alt="Dog Food">
+                        <div class="product-actions"><a href="#"><i class="far fa-heart"></i></a><a href="#"><i
+                                    class="far fa-eye"></i></a></div>
+                        <div class="add-to-cart-btn"><button class="btn btn-dark w-100">Add To Cart</button></div>
+                    </div>
+                    <div class="product-info mt-3">
+                        <h6 class="product-name">Breed Dry Dog Food</h6>
+                        <div class="price"><span class="new-price text-danger">$100</span></div>
+                        <div class="rating d-flex align-items-center gap-1"><i class="fas fa-star text-warning"></i><i
+                                class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i
+                                class="far fa-star text-muted"></i><i class="far fa-star text-muted"></i><span
+                                class="review-count text-muted">(35)</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2">
+                <div class="product-card">
+                    <div class="product-image-container"><img src="images/e60892a4f0a3d5d144dce622c7338ec5be12908f.png"
+                            alt="Camera">
+                        <div class="product-actions"><a href="#"><i class="far fa-heart"></i></a><a href="#"><i
+                                    class="far fa-eye"></i></a></div>
+                        <div class="add-to-cart-btn"><button class="btn btn-dark w-100">Add To Cart</button></div>
+                    </div>
+                    <div class="product-info mt-3">
+                        <h6 class="product-name">CANON EOS DSLR Camera</h6>
+                        <div class="price"><span class="new-price text-danger">$360</span></div>
+                        <div class="rating d-flex align-items-center gap-1"><i class="fas fa-star text-warning"></i><i
+                                class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i
+                                class="fas fa-star text-warning"></i><i class="far fa-star text-muted"></i><span
+                                class="review-count text-muted">(95)</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2">
+                <div class="product-card">
+                    <div class="product-image-container"><img src="images/203be522b7b02d10672f6f6147762cf52bfcfc54.png"
+                            alt="Laptop">
+                        <div class="product-actions"><a href="#"><i class="far fa-heart"></i></a><a href="#"><i
+                                    class="far fa-eye"></i></a></div>
+                        <div class="add-to-cart-btn"><button class="btn btn-dark w-100">Add To Cart</button></div>
+                    </div>
+                    <div class="product-info mt-3">
+                        <h6 class="product-name">ASUS FHD Gaming Laptop</h6>
+                        <div class="price"><span class="new-price text-danger">$700</span></div>
+                        <div class="rating d-flex align-items-center gap-1"><i class="fas fa-star text-warning"></i><i
+                                class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i
+                                class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><span
+                                class="review-count text-muted">(325)</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2">
+                <div class="product-card">
+                    <div class="product-image-container"><img src="images/e7bdd11662ea1dfc2d615a5bb054e139a764f306.png"
+                            alt="Curology Set">
+                        <div class="product-actions"><a href="#"><i class="far fa-heart"></i></a><a href="#"><i
+                                    class="far fa-eye"></i></a></div>
+                        <div class="add-to-cart-btn"><button class="btn btn-dark w-100">Add To Cart</button></div>
+                    </div>
+                    <div class="product-info mt-3">
+                        <h6 class="product-name">Curology Product Set</h6>
+                        <div class="price"><span class="new-price text-danger">$500</span></div>
+                        <div class="rating d-flex align-items-center gap-1"><i class="fas fa-star text-warning"></i><i
+                                class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i
+                                class="fas fa-star text-warning"></i><i class="far fa-star text-muted"></i><span
+                                class="review-count text-muted">(145)</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2">
+                <div class="product-card">
+                    <div class="product-image-container"><img src="images/78e727118c99fe72271cf43f5e3566b39ca7c8f4.jpg"
+                            alt="Dog Food">
+                        <div class="product-actions"><a href="#"><i class="far fa-heart"></i></a><a href="#"><i
+                                    class="far fa-eye"></i></a></div>
+                        <div class="add-to-cart-btn"><button class="btn btn-dark w-100">Add To Cart</button></div>
+                    </div>
+                    <div class="product-info mt-3">
+                        <h6 class="product-name">Breed Dry Dog Food</h6>
+                        <div class="price"><span class="new-price text-danger">$100</span></div>
+                        <div class="rating d-flex align-items-center gap-1"><i class="fas fa-star text-warning"></i><i
+                                class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i
+                                class="far fa-star text-muted"></i><i class="far fa-star text-muted"></i><span
+                                class="review-count text-muted">(35)</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-product-slider">
+            <div class="p-2">
+                <div class="product-card">
+                    <div class="product-image-container"><span class="new-badge">NEW</span><img
+                            src="images/5f4ea9acf805319ddf3897fc9daaf58559542260.png" alt="Kids Car">
+                        <div class="product-actions"><a href="#"><i class="far fa-heart"></i></a><a href="#"><i
+                                    class="far fa-eye"></i></a></div>
+                        <div class="add-to-cart-btn"><button class="btn btn-dark w-100">Add To Cart</button></div>
+                    </div>
+                    <div class="product-info mt-3">
+                        <h6 class="product-name">Kids Electric Car</h6>
+                        <div class="price"><span class="new-price text-danger">$960</span></div>
+                        <div class="rating d-flex align-items-center gap-1"><i class="fas fa-star text-warning"></i><i
+                                class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i
+                                class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><span
+                                class="review-count text-muted">(65)</span></div>
+                        <div class="color-swatches mt-2"><span class="color-swatch active"
+                                style="background-color: #DB4444;"></span><span class="color-swatch"
+                                style="background-color: #000;"></span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2">
+                <div class="product-card">
+                    <div class="product-image-container"><img src="images/d0b7bb25884f6fdfc1357634d7d7b09e05755c2f.png"
+                            alt="Soccer Cleats">
+                        <div class="product-actions"><a href="#"><i class="far fa-heart"></i></a><a href="#"><i
+                                    class="far fa-eye"></i></a></div>
+                        <div class="add-to-cart-btn"><button class="btn btn-dark w-100">Add To Cart</button></div>
+                    </div>
+                    <div class="product-info mt-3">
+                        <h6 class="product-name">Jr. Zoom Soccer Cleats</h6>
+                        <div class="price"><span class="new-price text-danger">$1160</span></div>
+                        <div class="rating d-flex align-items-center gap-1"><i class="fas fa-star text-warning"></i><i
+                                class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i
+                                class="fas fa-star text-warning"></i><i
+                                class="fas fa-star-half-alt text-warning"></i><span
+                                class="review-count text-muted">(35)</span></div>
+                        <div class="color-swatches mt-2"><span class="color-swatch active"
+                                style="background-color: #fdd835;"></span><span class="color-swatch"
+                                style="background-color: #DB4444;"></span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2">
+                <div class="product-card">
+                    <div class="product-image-container"><span class="new-badge">NEW</span><img
+                            src="images/288e013365fe639fccc1fe4168fca740ef1f85e7.png" alt="Gamepad">
+                        <div class="product-actions"><a href="#"><i class="far fa-heart"></i></a><a href="#"><i
+                                    class="far fa-eye"></i></a></div>
+                        <div class="add-to-cart-btn"><button class="btn btn-dark w-100">Add To Cart</button></div>
+                    </div>
+                    <div class="product-info mt-3">
+                        <h6 class="product-name">GP11 Shooter USB Gamepad</h6>
+                        <div class="price"><span class="new-price text-danger">$660</span></div>
+                        <div class="rating d-flex align-items-center gap-1"><i class="fas fa-star text-warning"></i><i
+                                class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i
+                                class="fas fa-star text-warning"></i><i
+                                class="fas fa-star-half-alt text-warning"></i><span
+                                class="review-count text-muted">(55)</span></div>
+                        <div class="color-swatches mt-2"><span class="color-swatch active"
+                                style="background-color: #000;"></span><span class="color-swatch"
+                                style="background-color: #DB4444;"></span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2">
+                <div class="product-card">
+                    <div class="product-image-container"><img src="images/04a1915fd6cedd7c8b1073685c5f1be1b50e1ac6.png"
+                            alt="Satin Jacket">
+                        <div class="product-actions"><a href="#"><i class="far fa-heart"></i></a><a href="#"><i
+                                    class="far fa-eye"></i></a></div>
+                        <div class="add-to-cart-btn"><button class="btn btn-dark w-100">Add To Cart</button></div>
+                    </div>
+                    <div class="product-info mt-3">
+                        <h6 class="product-name">Quilted Satin Jacket</h6>
+                        <div class="price"><span class="new-price text-danger">$660</span></div>
+                        <div class="rating d-flex align-items-center gap-1"><i class="fas fa-star text-warning"></i><i
+                                class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i
+                                class="fas fa-star text-warning"></i><i
+                                class="fas fa-star-half-alt text-warning"></i><span
+                                class="review-count text-muted">(55)</span></div>
+                        <div class="color-swatches mt-2"><span class="color-swatch active"
+                                style="background-color: #3a5b3a;"></span><span class="color-swatch"
+                                style="background-color: #DB4444;"></span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2">
+                <div class="product-card">
+                    <div class="product-image-container"><span class="new-badge">NEW</span><img
+                            src="images/5f4ea9acf805319ddf3897fc9daaf58559542260.png" alt="Kids Car">
+                        <div class="product-actions"><a href="#"><i class="far fa-heart"></i></a><a href="#"><i
+                                    class="far fa-eye"></i></a></div>
+                        <div class="add-to-cart-btn"><button class="btn btn-dark w-100">Add To Cart</button></div>
+                    </div>
+                    <div class="product-info mt-3">
+                        <h6 class="product-name">Kids Electric Car</h6>
+                        <div class="price"><span class="new-price text-danger">$960</span></div>
+                        <div class="rating d-flex align-items-center gap-1"><i class="fas fa-star text-warning"></i><i
+                                class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i
+                                class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><span
+                                class="review-count text-muted">(65)</span></div>
+                        <div class="color-swatches mt-2"><span class="color-swatch active"
+                                style="background-color: #DB4444;"></span><span class="color-swatch"
+                                style="background-color: #000;"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-5">
+            <a href="#" class="btn btn-danger btn-view-all">View All Products</a>
+        </div>
+
+    </section>
+    <section class="new-arrival-section container">
+        <div class="d-flex align-items-center mb-3">
+            <span class="section-title-indicator"></span>
+            <h6 class="section-title-text text-danger fw-semibold mb-0">Featured</h6>
+        </div>
+        <h2 class="section-main-title fw-semibold mb-4">New Arrival</h2>
+        <div class="row g-4">
+            <div class="col-lg-6">
+                <div class="arrival-card large-card arrival-ps5">
+                    <div class="arrival-card-content">
+                        <h3>PlayStation 5</h3>
+                        <p class="mb-3">Black and White version of the PS5 coming out on sale.</p>
+                        <a href="#" class="shop-now-link-underlined">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="d-flex flex-column h-100 gap-4">
+                    <div class="arrival-card flex-grow-1 arrival-womens">
+                        <div class="arrival-card-content">
+                            <h3>Women's Collections</h3>
+                            <p>Featured woman collections that give you another vibe.</p>
+                            <a href="#" class="shop-now-link-underlined">Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="arrival-card small-card arrival-speakers">
+                                <div class="arrival-card-content">
+                                    <h3>Speakers</h3>
+                                    <p>Amazon wireless speakers.</p>
+                                    <a href="#" class="shop-now-link-underlined">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="arrival-card small-card arrival-perfume">
+                                <div class="arrival-card-content">
+                                    <h3>Perfume</h3>
+                                    <p>GUCCI INTENSE OUD EDP.</p>
+                                    <a href="#" class="shop-now-link-underlined">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services-section container py-5">
+        <div class="row text-center">
+            <div class="col-md-4 mb-4 mb-md-0">
+                <div class="service-icon-wrapper">
+                    <img src="images/icon-delivery.png" alt="Free and Fast Delivery" class="service-icon-img">
+                </div>
+                <h6 class="mt-4 mb-2 fw-bold">FREE AND FAST DELIVERY</h6>
+                <p class="text-muted">Free delivery for all orders over $140</p>
+            </div>
+            <div class="col-md-4 mb-4 mb-md-0">
+                <div class="service-icon-wrapper">
+                    <img src="images/Icon-Customer service.png" alt="24/7 Customer Service" class="service-icon-img">
+                </div>
+                <h6 class="mt-4 mb-2 fw-bold">24/7 CUSTOMER SERVICE</h6>
+                <p class="text-muted">Friendly 24/7 customer support</p>
+            </div>
+            <div class="col-md-4">
+                <div class="service-icon-wrapper">
+                    <img src="images/Icon-secure.png" alt="Money Back Guarantee" class="service-icon-img">
+                </div>
+                <h6 class="mt-4 mb-2 fw-bold">MONEY BACK GUARANTEE</h6>
+                <p class="text-muted">We return money within 30 days</p>
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer bg-black text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <h5 class="footer-title fw-bold">Exclusive</h5>
+                    <p class="footer-subtitle mt-3">Subscribe</p>
+                    <p class="footer-text">Get 10% off your first order</p>
+                    <div class="subscribe-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit"><i class="far fa-paper-plane"></i></button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <h5 class="footer-title">Support</h5>
+                    <p class="footer-text mt-3">
+                        111 Bijoy sarani, Dhaka, <br>
+                        DH 1515, Bangladesh.
+                    </p>
+                    <p class="footer-text">exclusive@gmail.com</p>
+                    <p class="footer-text">+88015-88888-9999</p>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <h5 class="footer-title">Account</h5>
+                    <ul class="footer-links list-unstyled mt-3">
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Login / Register</a></li>
+                        <li><a href="#">Cart</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                        <li><a href="#">Shop</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <h5 class="footer-title">Quick Link</h5>
+                    <ul class="footer-links list-unstyled mt-3">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms Of Use</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-8 col-sm-12 mb-4">
+                    <h5 class="footer-title">Download App</h5>
+                    <p class="footer-text-small mt-3">Save $3 with App New User Only</p>
+                    <div class="d-flex align-items-center gap-2">
+                        <img src="images/991387c05dd6d44594e01b675513068803e2426d.jpg" alt="QR Code"
+                            class="qr-code-img">
+                        <div class="d-flex flex-column gap-2">
+                            <a href="#"><img src="images/a61d4c7110b18ab55a1e1a07ebf54a46ebb07284.png"
+                                    alt="Get it on Google Play" class="store-badge-img"></a>
+                            <a href="#"><img src="images/38932d5accb54c528f9bcf326ca48ea29bd6d890.png"
+                                    alt="Download on the App Store" class="store-badge-img"></a>
+                        </div>
+                    </div>
+                    <div class="social-icons d-flex gap-4 mt-3">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom text-center py-4 mt-4">
+                <p class="mb-0">© Copyright Rimel 2025. All right reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
